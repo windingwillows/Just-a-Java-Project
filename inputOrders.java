@@ -18,7 +18,7 @@ public class inputOrders {
 		public void almostOrder(int[] array)
 		{
 			Random rn= new Random();
-			int almostIndex = Math.round(array.length*8/10);
+			int almostIndex = Math.round(array.length * 8.0f / 10);
 			for( int i=0; i< almostIndex; i++)
 			{
 				int randomIndex1 = rn.nextInt(array.length);
@@ -33,9 +33,9 @@ public class inputOrders {
 	public int[] reverseOrder(int n)
 	{
 		int array[] = new int[n];
-		for(int i=n; i>0; i--)
+		for (int i = 0; i < n; i++)
 		{
-			array[i] = i+1;
+			array[i] = n - i;
 		}
 		return array;
 	}
